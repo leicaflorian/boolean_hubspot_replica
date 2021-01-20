@@ -1,0 +1,96 @@
+@import "variables";
+
+////////////////////////////
+// Spacing
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.my-3 {
+  margin-top: $base-padding;
+  margin-bottom: $base-padding;
+}
+
+.mx-3 {
+  margin-left: $base-padding;
+  margin-right: $base-padding;
+}
+
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+////////////////////////////
+// Typography
+
+.text-small {
+  font-size: $base-font-size * .88;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-main {
+  font-size: $base-font-size * 1.15;
+}
+
+////////////////////////////
+// Backgrounds
+
+.bg-gradient-green {
+  background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+////////////////////////////
+// Displays & positions
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.align-start {
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.align-center {
+  align-content: center;
+  align-items: center;
+}
+
+.justify-start {
+  justify-content: flex-start;
+  justify-items: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+  justify-items: center;
+}

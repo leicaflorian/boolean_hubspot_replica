@@ -1,0 +1,15 @@
+@import "variables";
+
+.row {
+  display: flex;
+}
+
+@for $i from 1 through $columns {
+  .col-#{$i} {
+    width: ((100% / $columns) * $i);
+  }
+
+  .col-offset-#{$i} {
+    margin-left: ((100% / $columns) * $i);
+  }
+}

@@ -1,0 +1,57 @@
+@import "variables";
+
+.btn {
+  border: 0;
+  padding: $btn-padding-y $btn-padding-x;
+  border-radius: $base-border-radius;
+  transition: background-color $base-transition;
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 136px;
+}
+
+.btn-primary {
+  background-color: $accent-color;
+  color: #fff;
+
+  &:hover {
+    background-color: #ffbcac;
+  }
+
+  &:active {
+    background-color: #e66e50;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &__outline {
+    background-color: white;
+    border: solid 1px $accent-color;
+    color: $accent-color;
+
+    &:hover {
+      background-color: #fff1ee;
+    }
+
+    &:active {
+      background-color: #ffbcac;
+    }
+  }
+}
+
+.btn-large {
+  padding: $btn-padding-y * 2.45 $btn-padding-x * 1.55;
+  font-size: 1.06rem;
+}
+
+.btn-group {
+  margin-left: -6px;
+  margin-right: -6px;
+
+  .btn {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}

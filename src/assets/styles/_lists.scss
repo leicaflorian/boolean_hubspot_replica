@@ -1,0 +1,23 @@
+@import "variables";
+
+.checked-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    line-height: $base-font-size * 1.85;
+    font-size: $base-font-size * .8;
+
+    &:before {
+      content: "";
+      background-image: url("https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/partners/images/Orange_Checkmark.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 18px;
+      height: 18px;
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: $base-padding * .7;
+    }
+  }
+}

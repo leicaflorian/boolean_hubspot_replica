@@ -1,0 +1,149 @@
+@import "variables";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  font-family: "AvenirNext", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: $base-font-size;
+  background-color: $bg-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $text-color;
+  text-decoration: none;
+  transition: color $base-transition;
+
+  &:hover {
+    color: $text-color-hover;
+    text-decoration: underline;
+  }
+
+  .svg-icon {
+    width: 16px;
+    height: 16px;
+    transition: fill $base-transition;
+  }
+}
+
+h1 {
+  font-size: $base-font-size * 2.7;
+  margin-top: $base-padding * 2;
+  margin-bottom: $base-padding * 2;
+}
+
+h2 {
+  font-size: $base-font-size * 2;
+  margin-top: 0;
+  margin-bottom: $base-padding * 2;
+}
+
+
+h4 {
+  font-size: $base-font-size * 1.4;
+  margin-top: $base-padding;
+  margin-bottom: $base-padding;
+}
+
+p {
+  line-height: $base-font-size * 1.6;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.svg-icon {
+
+  &__small {
+    padding: 2px;
+  }
+}
+
+.main-section {
+  padding: ($base-padding * 4.4) 0;
+
+  &__large {
+    padding: ($base-padding * 7) 0;
+  }
+}
+
+.main-section__hero {
+  position: relative;
+  min-height: 730px;
+  background-image: linear-gradient(to top right, #fef8f0, #fff3ee, #fff1ee);
+  border-bottom: 3px solid $border-color;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__bg_wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 516px;
+    transform: translateX(-50%);
+  }
+
+  &__background {
+    height: 100%;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -90%;
+      width: 100%;
+      bottom: 0;
+      display: block;
+      background: #afebe4;
+      height: 76px;
+      border-top: 3px solid #33475b;
+      z-index: -1;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      background: #00a48d;
+      height: 144px;
+      width: 100%;
+      border-top: 3px solid #33475b;
+      right: -90%;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    &-img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+
+  &__content {
+    height: 100%;
+    display: flex;
+    z-index: 2;
+    font-weight: 400;
+    //transform: translateY(-50%);
+    line-height: 1.60;
+  }
+}
+
+.main-section__block {
+  margin-bottom: $base-padding * 3.5;
+}
+
+.animate__animated {
+  opacity: 0;
+}

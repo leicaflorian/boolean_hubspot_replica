@@ -1,0 +1,15 @@
+{
+  "name": "boolean_hubspot_replica",
+  "version": "1.0.0",
+  "description": "Simple replica of the homepage of HubSpot, made for Boolean.",
+  "main": "src/index.html",
+  "author": "florian-leica <florian.leica@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "devDependencies": {
+    "sass": "^1.32.4"
+  }
+}
